@@ -9,15 +9,54 @@
   
 }
 
+.btn-servico{
+
+ font-size: 0.7em;
+    width: 100px;
+}
+ 
+
+.btn-orcamento{
+    font-size: 0.7em;
+    width: 125px;
+  }
+  
 
 .btn-whatsapp{
-  
     width: 90px;
     height: 35px;
-   
     font-size: 0.7em;
    
 
   }
 
+  .card{
+    width: 220px;
+   
+  }
+  
+  .card-contato{
+    width: 300px;
+   
+  
+  }
 
+
+  .imagem-destaque{
+    width: 300px;
+    height: 450px;
+  
+  }
+
+  .contato p{
+    font-size: 0.8em;
+  }
+
+  footer p{
+    font-size: 0.7em;
+  }
+
+  .form {
+    width: 250px;
+    font-size: 1.125rem;
+  }  
