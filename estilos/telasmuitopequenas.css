@@ -1,8 +1,24 @@
 @charset "UTF-8";
 
 .logo img{
-    width: 200px;
+    width: 35px;
 }
+
+.logo h1{
+    font-size: 0.7em;
+  
+}
+
+
+.btn-whatsapp{
+  
+    width: 90px;
+    height: 35px;
+   
+    font-size: 0.7em;
+   
+
+  }
 
 .iarea{
 margin: auto;
