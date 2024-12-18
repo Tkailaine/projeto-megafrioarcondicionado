@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Blog Responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        .blog-summary {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+
+        .news-page {
+            display: none;
+        }
+
+        .news-page h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .news-page p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .btn-inicio{
+            display: block;
+            border: none;
+            width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+            background-color: #007BFF;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+
+        .btn-inicio:hover{
+            background-color: #022d5c;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notícias</h1>
+        <!-- Grid de notícias -->
+        <div id="news-container" class="blog-grid">
+            
+            
+            <div class="blog-card" data-title="Ar-condicionado split ou de janela: veja as diferenças." 
+            data-content="
+
+            <p><h1>Diferenças entre o ar condicionado Split e de Janela</h1></p>
+           <p> Os aparelhos de ar condicionado Split e de Janela têm características específicas que impactam a instalação, o funcionamento, o consumo de energia e a produção de ruído. Conheça as principais diferenças:</p>
+
+           <p><h2> 1. Instalação</h2><p>
+            <p><strong>Split :</strong> A instalação é mais complexa e exige a divisão do sistema em duas unidades: uma interna e uma externa. Isso pode exigir perfurações na parede e profissionais especializados, o que pode aumentar o custo da instalação.</p>
+            <p><strong>Janela :</strong> A instalação é mais simples e barata, já que o aparelho é composto por uma única unidade que pode ser instalada em uma janela ou abertura na parede. Solicite apenas um técnico eletricista, mas pode ocupar um espaço útil no ambiente.</p>
+            <p><h2>2. Funcionamento</h2></p>
+            <p><strong>Split :</strong> O sistema é dividido em duas partes: a unidade interna, que contém o evaporador, filtros e ventilador, e a unidade externa, com compressor e condensador. O sistema funciona em conjunto e é controlado por um termostato.</p>
+           <p><strong>Janela :</strong> O ar-condicionado de janela tem todas as peças na mesma caixa, com um sistema único que suga o ar quente e o refrigerador, enquanto a parte externa libera o ar quente. O controle pode ser manual, ao contrário do modelo split, que é operado por controle remoto.</p>
+            <p><h2>3. Consumo de Energia</h2></p>
+           <p><strong>Split :</strong> O ar condicionado split tende a ser mais eficiente energeticamente, especialmente se usar a tecnologia Inverter. Essa tecnologia ajusta a velocidade do compressor de acordo com a necessidade de climatização, evitando picos de consumo e sendo mais econômica.<p>
+            <p><strong>Janela :</strong> O modelo de janela é menos eficiente em termos de consumo de energia, pois sua capacidade de refrigeração é mais limitada. Em espaços maiores, o aparelho precisa trabalhar mais para refrigerar, consumindo mais energia.</p>
+            <p><strong>4. Produção de Ruído</strong></p>
+            <p><strong>Split :</strong> Aparelhos split são mais silenciosos, pois o compressor e o condensador ficam na unidade externa, reduzindo o ruído no ambiente.
+            Janela : O modelo de janela tende a ser mais barulhento, já que todos os componentes ficam em uma única caixa, próximo ao usuário, o que gera mais vibração e ruído.</p>
+            <p><h1>Prós e Contras</h1></p>
+            <p><h2>Split</h2></p>
+            <p><strong>Vantagens :</strong> Maior eficiência energética, conforto térmico, operação silenciosa, design moderno e discreto, maior durabilidade.</p>
+           <p><strong> Desvantagens :</strong> Custo de instalação e manutenção mais elevados.</p>
+            <p><h2>Janela</strong>
+            <p><strong>Vantagens :</strong> Custo-benefício, fácil instalação, aparelho compacto, manutenção barata, ideal para ambientes menores.</p>
+           <p><strong>Desvantagens :</strong> Mais barulhento, maior consumo de energia e capacidade limitada de refrigeração.</p>
+           <p><h3>Qual é o melhor para você?</h3></p>
+           <p> O ar-condicionado split é ideal para quem busca maior conforto, eficiência energética e silêncio, sendo uma excelente escolha para ambientes amplos e que bloqueiam mais qualidade térmica. Já o ar condicionado de janela é uma opção mais econômica, indicada para quem tem espaços menores e precisa de uma solução simples e acessível.</p>
+
+            <p><h1>Conclusão</h1></p>
+            <p>Se a economia de energia e o conforto são suas prioridades, o modelo split é a melhor escolha. No entanto, para quem procura uma opção mais acessível e prática, o ar condicionado de janela pode ser uma solução adequada, especialmente em ambientes pequenos.</p>">
+                <img src="../imagens/janela.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">Ar-condicionado split ou de janela: veja as diferenças.</h2>
+                <p class="blog-summary">Os aparelhos de ar condicionado Split e de Janela apresentam diferenças significativas em termos de instalação, consumo de energia, funcionamento e produção de ruído. O Split é mais eficiente energeticamente, silencioso e ideal para ambientes amplos, mas possui um custo de instalação e manutenção mais alto. Já o ar condicionado de janela é mais acessível, de fácil instalação e indicado para ambientes menores, embora seja mais ruidoso e consuma mais energia. O modelo Split é recomendado para quem busca conforto e eficiência, enquanto o de Janela é uma opção mais simples e econômica.</p>
+                <p class="blog-meta">Fonte: Tecnoblog - Data: 04/08/2024</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+            
+            <div class="blog-card" data-title="Ambientes com ar condicionado e purificado podem contribuir para a produtividade no trabalho."
+            data-content="
+            <p>A configuração adequada do ambiente de trabalho tem um impacto direto na qualidade do desempenho profissional. Fatores como iluminação, temperatura, ventilação e qualidade influenciam na produtividade, tanto em escritórios quanto em home office.</p>
+
+            <p>A poluição do ar e as flutuações de temperatura são problemas que podem prejudicar o desempenho no trabalho. No entanto, existem soluções práticas para melhorar esses aspectos e criar um ambiente favorável à produtividade. Investir na melhoria dessas condições traz benefícios tanto a curto quanto a longo prazo, para funcionários e funcionários.</p>
+            
+           <p><h1>Qualidade do ar e sua relação com a produtividade</h1></p>
+            
+           <p> Estudos, como o do World Resources Institute (WRI) Brasil, indicam que a poluição do ar afeta diretamente a saúde, o meio ambiente e também a economia. A exposição a exposições está associada à queda na produtividade no trabalho.</p>
+            
+           <p> Pesquisas da Universidade Nacional de Cingapura apontam que falta de atenção à qualidade do ar prejudicando habilidades como coordenação, consistência e velocidade. Garantir um ambiente com ar filtrado e bem ventilado melhora a saúde e o desempenho dos profissionais.</p>
+            
+           <p> Durante a pandemia de coronavírus, a atenção à qualidade do ar se intensificou. Quando bem instalados e desligados, os sistemas de ar condicionado desempenham papel crucial na filtragem do ar.</p>
+            
+           <p> De acordo com a ABRAVA (Associação Brasileira de Ar Condicionado, Refrigeração, Ventilação e Aquecimento), quatro fatores são essenciais para o bom funcionamento de um ar condicionado: atualização de ar, filtragem, controle de temperatura e umidade, e monitoramento da qualidade do ar.</p>
+            
+    
+           ">
+           <img src="../imagens/trabalho.jpg" alt="Imagem da notícia">
+           <h2 class="blog-title">Ambientes com ar condicionado e purificado podem contribuir para a produtividade no trabalho.</h2>
+           <p class="blog-summary">A qualidade do ambiente de trabalho, incluindo fatores como temperatura, ventilação e qualidade do ar, influencia diretamente a produtividade. A poluição do ar e as variações de temperatura podem prejudicar o desempenho profissional, mas soluções adequadas, como o uso de ar condicionado com boa filtragem e manutenção, ajudam a melhorar a saúde e a eficiência no trabalho. Empresas como a VRF Engenharia oferecem serviços especializados para garantir ambientes climatizados e saudáveis.</p>
+           <p class="blog-meta">Fonte: Gazeta do Povo - Data: 03/09/2021</p>
+           <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+       </div>
+       
+           
+            <div class="blog-card" data-title="Ao usar o ar-condicionado de maneira eficiente, ocorre economia na conta de luz" 
+                 data-content="
+
+                 <p>Durante a primavera e o verão, é essencial ter cuidados com o consumo de energia elétrica, especialmente no que diz respeito aos aparelhos de refrigeração. O aumento na popularidade dos aparelhos de ar condicionado tem gerado impactos no consumo de energia nas residências, que, em 2024, registraram uma alta de 4% no comparativo entre os períodos de janeiro a setembro, em relação ao mesmo intervalo de 2019. Outubro, com os picos de calor no Paraná, que ultrapassaram os 40ºC, a demanda simultânea do sistema elétrico aumentou em média 10%, conforme observado a Copel.</p>
+
+                 <p>Gustavo Klinguelfus, gerente de Gestão da Inovação da Copel, destaca que o impacto do ar condicionado na conta de luz depende de vários fatores, como o tipo do aparelho, o modo de uso e a manutenção. Ele recomenda que, na hora da compra, seja considerada a etiquetagem de eficiência energética Procel, e o dimensionamento adequado ao meio ambiente. Em geral, a recomendação é de 600 BTUs por metro quadrado, considerando o número de pessoas e aparelhos que geram calor no ambiente.</p>
+                 
+                 <p>Por exemplo, em um home office de 10 metros quadrados, utilizado por duas pessoas com dois computadores e uma lâmpada incandescente, um ar-condicionado de 9 mil BTUs seria o ideal. Contudo, o impacto desse consumo depende de várias variáveis, como a eficiência do aparelho e a tecnologia usada. A tecnologia inverter, por exemplo, pode reduzir o consumo de energia entre 40% a 60%.</p>
+                 
+                 <p>Além de escolher o aparelho adequado, hábitos simples podem ajudar a reduzir o consumo de energia. Manter portas e janelas fechadas enquanto o ar-condicionado estiver ligado, evitar temperaturas extremas, realizar manutenção periódica e desligar o aparelho quando não há ninguém no ambiente são atitudes que fazem diferença na conta de luz.</p>
+                 
+                 <p><h1>Eficiência Energética</h1></p>
+                 
+                 <p>A eficiência energética dos aparelhos de ar condicionado foi regulamentada no Brasil em 2007, com revisões em 2011 e 2018. Em agosto de 2024, a Empresa de Pesquisa Energética (EPE) publicou uma nota técnica com contribuições para a revisão dos índices, prevista para 2020. Segundo a EPE, o consumo de energia no setor residencial devido ao uso de ar condicionado mais que triplicado entre 2006 e 2017, atingiu 18,7 TWh. A adoção de equipamentos mais eficientes, como o minisplit highwall e o inversor, pode gerar uma economia de 136 TWh até 2030.</p>">
+                <img src="../imagens/economia.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">Ao usar o ar-condicionado de maneira eficiente, ocorre economia na conta de luz</h2>
+                <p class="blog-summary">O aumento do uso de ar-condicionado durante os meses mais quentes pode impactar o consumo de energia elétrica, com a demanda registrada pela Copel aumentando até 10% em picos de calor. A escolha do aparelho adequado e o uso responsável, como a escolha de aparelhos eficientes e a manutenção regular, podem reduzir o impacto na conta de luz. A eficiência energética dos ar-condicionados foi regulamentada para garantir uma economia significativa de energia até 2030.
+                </p>
+                <p class="blog-meta">Fonte: Agência Estadual de Notícias - Data: 04/11/2020</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+
+            
+
+
+           
+            <!-- Continue adicionando as outras notícias aqui seguindo o mesmo padrão -->
+        </div>
+    </div>
+
+    <!-- Página de notícia completa -->
+    <!-- Página de notícia completa -->
+<div class="news-page" id="news-page">
+    <div class="container">
+        <a href="#" id="back-to-home">← Voltar</a>
+        <h1 id="news-title"></h1>
+        <p id="news-content"></p>
+    </div>
+</div>
+
+<a href="../index.html" target="_self" style="text-decoration: none;"><button type="button" class="btn-inicio">Inicio</button></a>
+
+<script>
+    function openNews(element) {
+        const card = element.closest('.blog-card');
+        const title = card.getAttribute('data-title');
+        const content = card.getAttribute('data-content');
+
+        // Esconde a página inicial e mostra a notícia completa
+        document.querySelector('.container').style.display = 'none';
+        document.querySelector('.news-page').style.display = 'block';
+
+        // Define o conteúdo da notícia com HTML
+        document.getElementById('news-title').textContent = title;
+        document.getElementById('news-content').innerHTML = content;
+    }
+
+    document.getElementById('back-to-home').onclick = function() {
+        // Mostra a página inicial
+        document.querySelector('.container').style.display = 'block';
+        // Esconde a página da notícia
+        document.querySelector('.news-page').style.display = 'none';
+    };
+</script>
+
+</body>
+</html>

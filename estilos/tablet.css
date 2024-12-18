@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.logo img{
+  width: 80px;
+}
+nav.menu ul {
+  gap: 20px;
+}
+.bandeira{
+    flex-direction: row;
+}  
+ 
+
+
+.quemsomos{
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  
+}
+
+.txt-quemsomos{
+  width: 40%;
+  margin: 0px;
+}
+
+
+.contato{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+}
+.colaboracao{
+  text-align: left;
+}
+.box-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+  
+  .form {
+  
+    width: 300px;
+    font-size: 1.125rem;
+    margin-right: 30px;
+  }
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.bandeira{
+  height: 630px;
+  background-position:top;
+}
+.quemsomos{
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  
+}
+
+.txt-quemsomos{
+  width: 40%;
+  margin: 0px;
+}
+
+.contato{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-direction: row;
+}
+.colaboracao{
+  text-align: left;
+}
+.box-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+
+
+.sessao-footer{
+    gap: 40px;
+    justify-content: start;
+    flex-direction: row;
+  }
+  
+  .sessao-footer > div{
+  margin-top: 25px;
+  margin-right: 60px;
+  }
+  
+  .sessao-conquistas{
+    height: 200px;
+  }
+  
+  .countainer-principal-counter{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links-uteis > li{
+    font-size: 1.4em;
+    margin: 20px 0px;
+  }
+  
+  .form {
+  
+    width: 300px;
+    font-size: 1.125rem;
+  }
+  
+
+  
+
